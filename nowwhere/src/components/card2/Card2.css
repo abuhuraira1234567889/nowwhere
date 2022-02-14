@@ -1,0 +1,42 @@
+.card2-img1{
+    position: absolute;
+    width: 30px;
+}
+.card2-img2{
+    position: absolute;
+    border-radius: 200px;
+    left: 9px;
+    top: 13px;
+    width: 40px;
+}
+
+.card2-img{
+    position: relative;
+    width: 20px;
+}
+.card2-header, .apr, .earned{
+    display: flex;
+    justify-content:space-between;
+}
+
+.header-para{
+    display: flex;
+    justify-content: space-around;
+}
+.body-btn button{
+    width: 100%;
+    border-radius: 16px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    height: 48px;
+    margin-bottom: 50px;
+}
+.deatail{
+    display: flex;
+    justify-content: center;
+}
+.card2-wrapper{
+    
+   
+}

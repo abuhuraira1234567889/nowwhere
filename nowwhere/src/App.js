@@ -20,6 +20,7 @@ import Card from './components/cards/Card';
 import Footer2 from './components/footer2/Footer2';
 import Home from './Home';
 import Popup from './components/popup/Popup';
+import Card2 from './components/card2/Card2';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
     </BrowserRouter>
 
         <Popup/>
+        <Card2/>
 
 
 
