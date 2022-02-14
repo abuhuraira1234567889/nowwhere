@@ -6,7 +6,7 @@ const Card2 = () => {
         <>
             <div className="card2-wrapper ">
 
-                <div className="container">
+                <div className="container card2-container">
                     <div className="card2">
                         <div className="card2-header">
 

@@ -36,7 +36,11 @@
     display: flex;
     justify-content: center;
 }
-.card2-wrapper{
-    
+.card2-container{
+    display: flex;
+    justify-content: space-evenly;
    
+}
+.card2{
+    width: 30%;
 }
