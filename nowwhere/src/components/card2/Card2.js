@@ -8,6 +8,8 @@ const Card2 = () => {
 
                 <div className="container card2-container">
                     <div className="card2">
+
+                        <div className="container card2-body-container">
                         <div className="card2-header">
 
                         <div className='card2-img'>
@@ -19,7 +21,7 @@ const Card2 = () => {
                             <h2> CAKE-BNB</h2>
                             <div className="header-para">
                             <p>Core</p>
-                            <p>40X</p>
+                            <h5>40X</h5>
                             </div>
                         </div>
 
@@ -70,7 +72,7 @@ const Card2 = () => {
                         <div className="deatail">
                             <p>Detail</p>
                         </div>
-
+                        </div>
                     </div>
                 </div>
 
