@@ -1,4 +1,5 @@
 import React from 'react';
+import "../images/down.png"
 import "./Card2.css"
 
 const Card2 = () => {
@@ -144,7 +145,7 @@ const Card2 = () => {
 
                                     </div>
                                     <div className="deatail">
-                                        <p>Detail</p>
+                                        <p>Detail <img src="https://bgenchel.github.io/res/images/down-arrow.svg" alt="" /></p>
                                     </div>
                                 </div>
                             </div>

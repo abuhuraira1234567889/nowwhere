@@ -69,9 +69,16 @@
 .header-para p{
     font-size: 14px
 }
+
+.deatail p{
+    cursor: pointer;
+}
+.deatail img{
+    width: 10px;
+}
 @media (max-width:991px) {
     .card2{
-        width: 50%;
+        width: 45%;
     }
     
 }
