@@ -39,13 +39,16 @@
 .card2-container{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
    
 }
 .card2{
     width: 30%;
     
     border: 0.1px solid;
+    border-color: rgb(53, 53, 163);
     border-radius: 20px;
+    margin-bottom: 50px;
 
 }
 .card2-body-container{
@@ -65,4 +68,16 @@
 }
 .header-para p{
     font-size: 14px
+}
+@media (max-width:991px) {
+    .card2{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .card2{
+        width: 100%;
+    }
 }
