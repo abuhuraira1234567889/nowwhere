@@ -8,6 +8,7 @@ const Card = () => {
 
     return (
         <>
+        
             <Popup open={open} setOpen={setOpen} />
 
             <div className="card-parent">
