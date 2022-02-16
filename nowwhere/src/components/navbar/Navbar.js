@@ -19,6 +19,9 @@ const Navbar = () => {
     <div className="collapse navbar-collapse mr-auto" id="navbarNavAltMarkup">
      
         <ul className='navbar-nav ' >
+        <li className='nav-item '>
+            <Link className='nav-link' to="/card2"> Farm</Link>
+          </li>
         <li className='nav-item trade-button'>
             <Link className='nav-link' to="/card"> Trade</Link>
           </li>

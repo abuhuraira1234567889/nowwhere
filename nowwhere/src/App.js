@@ -36,13 +36,15 @@ function App() {
         <Route path="card" element={
         <Card />   
         } />
-       
+       <Route path="card2" element={
+        <Card2/>
+        } />
         
       </Routes>
     </BrowserRouter>
 
-        <Popup/>
-        <Card2/>
+        
+       
 
 
 
