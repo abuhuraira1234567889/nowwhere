@@ -6,8 +6,8 @@ import "./Card2.css"
 const Card2 = () => {
  
 
-    const [data, setData] = useState([])
-
+    // const [data, setData] = useState([])
+const [state,setState]=useState(0);
     const arr2 = [
 
         {
@@ -86,22 +86,23 @@ const Card2 = () => {
         }
     ]
 
-    useEffect(() => {
-        setData(arr2)
-    }, [])
+   
 
     function showData(key) {
-
+      state===key ? setState(0): setState(key);
         //  alert(key)
         arr2.map((edata) => {
             if (key === edata.id) {
+                console.log(edata.show,"before");
                 edata.show = !edata.show;
-                console.log(edata.show);
+                console.log(edata.show,"after");
                 return edata;
             }
-            setData(arr2)
+           
+            
 
         })
+       
 
 
     }
@@ -114,7 +115,7 @@ const Card2 = () => {
 
                 <div className="container card2-container">
                     {
-                        data?.map((data, index) => {
+                        arr2?.map((item, index) => {
                             return (
                                 <div className="card2" key={index}>
 
@@ -122,15 +123,15 @@ const Card2 = () => {
                                         <div className="card2-header">
 
                                             <div className='card2-img'>
-                                                <img key={data.id} className='card2-img1' src={data.img1} alt="" />
-                                                <img key={data.id} className='card2-img2' src={data.img2} alt="" />
+                                                <img key={item.id} className='card2-img1' src={item.img1} alt="" />
+                                                <img key={item.id} className='card2-img2' src={item.img2} alt="" />
                                             </div>
 
                                             <div className="header-content">
-                                                <h2 key={data.id} > {data.cakehead}</h2>
+                                                <h2 key={item.id} > {item.cakehead}</h2>
                                                 <div className="header-para">
-                                                    <p key={data.id}>{data.cakesubhead1}</p>
-                                                    <h5 key={data.id}>{data.cakesubhead2}</h5>
+                                                    <p key={item.id}>{item.cakesubhead1}</p>
+                                                    <h5 key={item.id}>{item.cakesubhead2}</h5>
                                                 </div>
                                             </div>
 
@@ -143,7 +144,7 @@ const Card2 = () => {
                                                         <p>APR</p>
                                                     </div>
                                                     <div className="apr-no">
-                                                        <p key={data.id}>{data.apr}</p>
+                                                        <p key={item.id}>{item.apr}</p>
                                                     </div>
                                                 </div>
                                                 <div className="apr">
@@ -151,7 +152,7 @@ const Card2 = () => {
                                                         <p>Earn</p>
                                                     </div>
                                                     <div className="apr-no">
-                                                        <p key={data.id}>{data.earn}</p>
+                                                        <p key={item.id}>{item.earn}</p>
                                                     </div>
                                                 </div>
                                                 <div className='cake-earned'>
@@ -159,7 +160,7 @@ const Card2 = () => {
 
                                                     <div className="earned">
                                                         <div className="earned-content">
-                                                            <p key={data.id}>{data.cakeearn}</p>
+                                                            <p key={item.id}>{item.cakeearn}</p>
                                                         </div>
                                                         <div className="earbed-btn">
                                                             <p>36.13%</p>
@@ -179,25 +180,21 @@ const Card2 = () => {
 
                                         </div>
                                         <div className="deatail">
-                                            <p onClick={e => showData(data.id)}>{data.show ? "hide" : "detail"} <img src="https://bgenchel.github.io/res/images/down-arrow.svg" alt="" /></p>
-                                        </div>
-
-
-
-                                        {
                                             
-                                            data.show &&
-                                            
-
+                                            <p onClick={e => showData(item.id)}>{item.show ? "hide" : "detail"} <img src="https://bgenchel.github.io/res/images/down-arrow.svg" alt="" /></p>
+                                        
+                            
+                                            {state===item.id && 
                                             <div className="detail-para">
                                                 <p>HEllo</p>
                                                 <p>Hello</p>
                                                 <p>Hello</p>
+                                            </div>}
+
                                             </div>
 
 
-
-                                        }
+                                        
 
 
 
