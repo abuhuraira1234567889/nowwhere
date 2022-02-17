@@ -21,6 +21,7 @@ import Footer2 from './components/footer2/Footer2';
 import Home from './Home';
 import Popup from './components/popup/Popup';
 import Card2 from './components/card2/Card2';
+import Win from './components/Win';
 
 function App() {
   return (
@@ -39,9 +40,14 @@ function App() {
        <Route path="card2" element={
         <Card2/>
         } />
+        <Route path="win" element={
+        <Win/>
+        } />
         
       </Routes>
     </BrowserRouter>
+
+    
 
         
        

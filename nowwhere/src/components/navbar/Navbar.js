@@ -20,6 +20,9 @@ const Navbar = () => {
      
         <ul className='navbar-nav ' >
         <li className='nav-item '>
+            <Link className='nav-link' to="/win"> Win</Link>
+          </li>
+        <li className='nav-item '>
             <Link className='nav-link' to="/card2"> Farm</Link>
           </li>
         <li className='nav-item trade-button'>

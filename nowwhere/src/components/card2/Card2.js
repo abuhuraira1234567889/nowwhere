@@ -181,24 +181,30 @@ const [state,setState]=useState(0);
                                         </div>
                                         <div className="deatail">
                                             
-                                            <p onClick={e => showData(item.id)}>{item.show ? "hide" : "detail"} <img src="https://bgenchel.github.io/res/images/down-arrow.svg" alt="" /></p>
+                                            <p onClick={e => showData(item.id)}>{state===item.id? "hide" : "detail"} <img src="https://bgenchel.github.io/res/images/down-arrow.svg" alt="" /></p>
                                         
                             
-                                            {state===item.id && 
+                                            {/* {state===item.id && 
                                             <div className="detail-para">
                                                 <p>HEllo</p>
                                                 <p>Hello</p>
                                                 <p>Hello</p>
-                                            </div>}
+                                            </div>} */}
 
                                             </div>
-
+                                            
 
                                         
 
 
 
                                     </div>
+                                    {state===item.id && 
+                                            <div className="detail-para">
+                                                <p>HEllo</p>
+                                                <p>Hello</p>
+                                                <p>Hello</p>
+                                            </div>}
                                 </div>
 
                             )
