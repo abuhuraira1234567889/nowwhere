@@ -205,7 +205,7 @@ const Traders = () => {
                                 console.log("ok")
                         }
 
-{
+                        {
                             toggle === 4 ?
 
 
