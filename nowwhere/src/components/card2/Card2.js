@@ -4,10 +4,10 @@ import Footer2 from '../footer2/Footer2';
 import "./Card2.css"
 
 const Card2 = () => {
- 
+
 
     // const [data, setData] = useState([])
-const [state,setState]=useState(0);
+    const [state, setState] = useState(0);
     const arr2 = [
 
         {
@@ -86,23 +86,23 @@ const [state,setState]=useState(0);
         }
     ]
 
-   
+
 
     function showData(key) {
-      state===key ? setState(0): setState(key);
+        state === key ? setState(0) : setState(key);
         //  alert(key)
         arr2.map((edata) => {
             if (key === edata.id) {
-                console.log(edata.show,"before");
+                console.log(edata.show, "before");
                 edata.show = !edata.show;
-                console.log(edata.show,"after");
+                console.log(edata.show, "after");
                 return edata;
             }
-           
-            
+
+
 
         })
-       
+
 
 
     }
@@ -180,10 +180,10 @@ const [state,setState]=useState(0);
 
                                         </div>
                                         <div className="deatail">
-                                            
-                                            <p onClick={e => showData(item.id)}>{state===item.id? "hide" : "detail"} <img src="https://bgenchel.github.io/res/images/down-arrow.svg" alt="" /></p>
-                                        
-                            
+
+                                            <p onClick={e => showData(item.id)}>{state === item.id ? "hide" : "detail"} <img src="https://bgenchel.github.io/res/images/down-arrow.svg" alt="" /></p>
+
+
                                             {/* {state===item.id && 
                                             <div className="detail-para">
                                                 <p>HEllo</p>
@@ -191,20 +191,20 @@ const [state,setState]=useState(0);
                                                 <p>Hello</p>
                                             </div>} */}
 
-                                            </div>
-                                            
+                                        </div>
 
-                                        
+
+
 
 
 
                                     </div>
-                                    {state===item.id && 
-                                            <div className="detail-para">
-                                                <p>HEllo</p>
-                                                <p>Hello</p>
-                                                <p>Hello</p>
-                                            </div>}
+                                    {state === item.id &&
+                                        <div className="detail-para">
+                                            <p>HEllo</p>
+                                            <p>Hello</p>
+                                            <p>Hello</p>
+                                        </div>}
                                 </div>
 
                             )
@@ -217,8 +217,8 @@ const [state,setState]=useState(0);
 
             </div>
 
-                    
-                    <Footer2/>
+
+            <Footer2 />
 
         </>
     );
