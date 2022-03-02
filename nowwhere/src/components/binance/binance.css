@@ -140,3 +140,24 @@
     }
     
 }
+
+.custom-shape-divider-bottom-1645531652 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1645531652 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 44px;
+    
+}
+
+.custom-shape-divider-bottom-1645531652 .shape-fill {
+    fill: rgb(204, 216, 240);
+}
